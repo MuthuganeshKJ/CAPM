@@ -1,0 +1,17 @@
+
+GET http://localhost:4004/odata/v4/catalog
+
+###
+GET http://localhost:4004/odata/v4/catalog/AddressDetails
+
+###
+GET http://localhost:4004/odata/v4/my/testing(name = 'Muthuganesh')
+
+###
+PATCH http://localhost:4004/odata/v4/CatalogService/EmployeeSet/02BD2137-0890-1EEA-A6C2-BB55C19807FB
+Content-Type: application/json
+ 
+{
+    "salary": 100000,
+    "Currency_code" : "USD"
+}
